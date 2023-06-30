@@ -1,0 +1,157 @@
+/* style header - start */
+
+header {
+    background-color: rgb(235, 79, 23, .7);
+    padding: 15px;
+}
+
+.wrapper__header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* style logo - start */
+
+.logo__title {
+    font-family: MyriadPro-BoldIt, 'Myriad Pro';
+    font-style: italic;
+    font-weight:700;
+    font-size:23px;
+}
+
+.logo__yellow {
+    fill:#e3d081;
+}
+
+.logo__white {
+  fill: #f1f7ed;
+  
+}
+
+.logo__brown {
+    fill:#54494b;
+}
+
+#logo {
+    width: 80%;
+    height: auto;
+}
+
+#logo:hover .logo__brown {
+    fill:#e3d081;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+#logo:hover .logo__white {
+    fill:rgb(84, 73, 75);
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+#logo:hover .logo__yellow {
+    fill:#f1f7ed;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+/* style logo - end */
+
+/* style navigation - start */
+
+.wrapper__nav-menubar {
+    display: flex;
+}
+
+.menuitem {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f1f7ed;
+    margin-left: 15px;
+}
+
+.menuitem:nth-child(1) {
+    padding: 11px 8.9px 9px 8.9px;
+}
+
+.menuitem:nth-child(2) {
+    padding: 11px 10px 9px 10px;
+}
+
+.menuitem:nth-child(3) {
+    padding: 11px 11.5px 9px 11.5px;
+}
+
+.menuitem:nth-child(4) {
+    padding: 15px 9.765px 5px 9.765px;
+}
+
+.menuitem:hover {
+    background-color: #e3d081;
+}
+
+/* style navigation - end */
+
+/* style link 'Book Online' - start */
+
+.wrapper__nav__a-bookonline {
+    display: grid;
+    gap: 15px;
+}
+
+.a__bookonline:link {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 80px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#f1f7ed;
+    background-color: rgb(59, 194, 140);
+    box-shadow: 3px 3px 5px 0px rgb(84, 73, 75, .75);
+}
+
+.a__bookonline:visited {
+    color:#ee5b76;
+    background-color: rgb(151, 222, 194);
+    border: 1px solid black;
+}
+
+.a__bookonline:hover {
+    color:black;
+    background-color: #e3d081;
+}
+
+.a__bookonline:active {
+    color:blue;
+    background-color: #f1f7ed;
+}
+
+/* style link 'Book Online' - end */
+
+/* style header - end */
+
+/* style image cat-and-dog - start */
+
+.homepage__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+/* style image cat-and-dog - end */
+
+/* style 'main' - start */
+
+/* .cat-and-dog-img {
+    background-image: url("images/.cat-and-dog-img.jpg");
+    width: 100px;
+    height: auto;
+} */
+
+/* style 'main' - end */
