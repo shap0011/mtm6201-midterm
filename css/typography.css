@@ -1,0 +1,102 @@
+
+/* @font-face rule */
+/* create custom font 'Logo Font' */
+@font-face {
+    font-family: 'Logo Font';
+    font-weight: 400;
+    font-style: normal;
+    src:  local('Myriad Pro Bold Italic'), url('/assets/fonts/myriad_pro_bold_italic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/myriad_pro_bold_italic-webfont.woff') format('woff'),
+    url('/assets/fonts/Myriad_Pro_Bold_Italic.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Link Font' */
+@font-face {
+    font-family: 'Link Font';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Noto Sans Regular'), url('/assets/fonts/notosans-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/notosans-regular-webfont.woff') format('woff'),
+    url('/assets/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Heading h1 Font' */
+@font-face {
+    font-family: 'Heading h1 Font';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Gill Sans Ultra Bold Regular'), url('/assets/fonts/gill_sans_ultra_bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/gill_sans_ultra_bold-webfont.woff') format('woff'),
+    url('/assets/fonts/Gill_Sans_Ultra_Bold.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Heading h2 Font' */
+@font-face {
+    font-family: 'Heading h2 Font';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Bahnschrift Regular'), url('/assets/fonts/bahnschrift_10-webfont.woff2') format('woff2'),
+    url('/assets/fonts/agenda_regular-webfont.woff') format('woff'),
+    url('/assets/fonts/bahnschrift.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Heading h3 Font' */
+@font-face {
+    font-family: 'Heading h3 Font';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Agenda Bold'), url('/assets/fonts/agenda-bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/agenda-bold-webfont.woff') format('woff'),
+    url('/assets/fonts/agenda-bold.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Paragraph Font' */
+@font-face {
+    font-family: 'Paragraph Font';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Corbel Regular'), url('/assets/fonts/corbel-webfont.woff2') format('woff2'),
+    url('/assets/fonts/corbel-webfont.woff') format('woff'),
+    url('/assets/fonts/corbel.ttf') format('truetype');
+}
+
+/* style the logo text */
+.logo__title {
+    font-family: 'Logo Font', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+/* style the 'Book Online link */
+.a__bookonline {
+    font-family: 'Link Font', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+/* style heading 'h1' */
+h1 {
+    font-family: 'Heading h1 Font', sans-serif;
+    font-weight: 900;
+    font-size: 65px;
+}
+
+/* style heading 'h2' and first paragraph in block with class '.main__home'*/
+h2, .main__home p:nth-child(1) {
+    font-family: 'Heading h2 Font', sans-serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+/* style heading 'h2' and second paragraph in block with class '.main__home' */
+h3, .main__home p:nth-child(3) {
+    font-family: 'Heading h3 Font', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
