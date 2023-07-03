@@ -89,14 +89,18 @@ h1 {
 }
 
 /* style heading 'h2' and first paragraph in block with class '.main__home'*/
-h2, .main__home p:nth-child(1) {
+h2, 
+.main__home p:nth-child(1) {
     font-family: 'Heading h2 Font', sans-serif;
     font-weight: 400;
     font-size: 2.6rem;
 }
 
-/* style heading 'h2' and second paragraph in block with class '.main__home' */
-h3, .main__home p:nth-child(3) {
+/* style heading 'h3', second paragraph in block with class '.main__home', 
+and text in the <span> of 'About Us' and 'Contact Us' sections */
+h3, 
+.main__home p:nth-child(3),
+.span__main {
     font-family: 'Heading h3 Font', sans-serif;
     font-weight: 700;
     font-size: 1.3rem;

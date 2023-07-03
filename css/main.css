@@ -200,6 +200,8 @@ span {
 .main__aboutus {
     position: relative;
     text-align: left;
+    padding: 25px; 
+    padding-top: 15px;
 }
 
 .img__dog {
@@ -209,11 +211,6 @@ span {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.main__aboutus {
-   padding: 25px; 
-   padding-top: 15px;
 }
 
 .main__aboutus h2 {
@@ -235,20 +232,6 @@ span {
     top: 230px;
 }
 
-/* .main__aboutus h2 {
-    color:#f1f7ed;
-    margin: 0 auto;
-    position: relative;
-    top: 150px;
-} */
-
-/* .main__aboutus h2 {
-    color:#f1f7ed;
-    margin: 0 auto;
-    position: relative;
-    top: 150px;
-} */
-
 /* style 'main' - end */
 
 /* style footer - start */
@@ -256,12 +239,12 @@ span {
 /* style block with class '.grid__container--footer*/
 .grid__container--footer {
     padding: 15px;
-    /* padding-right: 15px; */
     background-color: rgb(84, 73, 75);
 }
 
 .footer__content p:nth-child(1)::first-letter,
-.footer__content p:nth-child(2) {
+.footer__content p:nth-child(2),
+.span__main {
     text-transform: capitalize;
 }
 
@@ -271,9 +254,6 @@ span {
     color: white;
 }
 
-/* .footer__content .a__bookonline {
-    margin-left: unset;
-} */
 
 .link__footer:link {
     text-align: center;
