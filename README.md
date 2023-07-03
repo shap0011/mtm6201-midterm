@@ -21,6 +21,9 @@ Image source:
 Photo by <a href="https://unsplash.com/fr/@lppoitras?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis-Philippe Poitras</a> on <a href="https://unsplash.com/photos/sJgucUmcaKE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Louis-Philippe Poitras: https://unsplash.com/photos/sJgucUmcaKE
 
+Photo by <a href="https://unsplash.com/@steve_volt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stefan Riedl</a> on <a href="https://unsplash.com/photos/NtDwC2ZS6v0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Stefan Reidl: https://unsplash.com/photos/NtDwC2ZS6v0;
+
 ## Work with typography:
 
 - Fonts used:

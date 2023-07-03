@@ -1,18 +1,91 @@
 @import url("reset.css");
 @import url("typography.css");
+@import url("layout.css");
 
-/* style header - start */
+* {
+    /* box-sizing: border-box; */
+}
 
-.wrapper__header {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
+/* style text - start ******************/
+
+h1 {
+    color: #E3D081;
+    -webkit-text-stroke: 1px rgb(84, 73, 75);
+    width: 80%;
+    margin: 380px auto 15px auto;
+}
+
+h2,
+h3,
+.main__home p {
+    color: #54494b;
+}
+
+.main__home p:nth-child(1) {
+    margin-top: 160px;
+}
+
+.main__home p:nth-child(3) {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.link__header,
+.link__footer,
+h3,
+.main__home p:nth-child(1)::first-letter,
+.main__home p:nth-child(3) {
+    text-transform: capitalize;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.main__contactus h2 {
+    text-transform: capitalize;
+}
+
+span {
+    text-transform: none;
+}
+
+/* style text - end ***********************/
+
+/* style layout - start *******************/
+
+/* style block with class '.grid__container*/
+.grid__container {
+    position: relative;
+}
+
+/* style header - start *********************/
+
+/* style image cat-and-dog - start */
+
+/* overlap header and image */
+.overlap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* locate image behind the header */
+.img__cat-dog {
+    z-index: -1;
+}
+
+/* style image cat-and-dog - end */
+
+/* style flexbox block with class '.flexbox__container--header' */
+.flexbox__container--header {
     position: fixed;
     background-color: rgb(235, 79, 23, .5);
     padding: 15px;
 }
 
-/* style logo - start */
+/* style logo - start **********************/
 
 .logo__yellow {
     fill: #e3d081;
@@ -50,18 +123,14 @@
     transition-timing-function: linear;
 }
 
-/* style logo - end */
+/* style logo - end ***********************/
 
-/* style navigation - start */
-
-.wrapper__nav-menubar {
-    display: flex;
-}
+/* style navigation - start ***************/
 
 .menuitem {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #f1f7ed;
+    background-color: rgb(241, 247, 237);
     margin-left: 15px;
 }
 
@@ -85,16 +154,11 @@
     background-color: #e3d081;
 }
 
-/* style navigation - end */
+/* style navigation - end ******************/
 
-/* style link 'Book Online' - start */
+/* style link 'Book Online' - start ***************/
 
-.wrapper__nav__a-bookonline {
-    display: grid;
-    gap: 15px;
-}
-
-.a__bookonline:link {
+.link__header:link {
     text-align: center;
     border: 1px solid black;
     border-radius: 20px;
@@ -106,149 +170,140 @@
     box-shadow: 1px 2px 0px 0px rgb(84, 73, 75, 1.00);
 }
 
-.a__bookonline:visited {
+.link__header:visited {
     color: #ee5b76;
     background-color: rgb(151, 222, 194);
     border: 1px solid black;
 }
 
-.a__bookonline:hover {
+.link__header:hover {
     color: black;
     background-color: rgb(227, 208, 129);
 }
 
-.a__bookonline:active {
+.link__header:active {
     color: blue;
     background-color: #f1f7ed;
 }
 
-/* style link 'Book Online' - end */
+/* style link 'Book Online' - end *****************/
 
-/* style header - end */
+/* style header - end *****************/
 
-/* style layout - start */
-.grid-item1{ 
-    grid-area: header;
+/* style 'main' - start *****************/
+
+/* style block with class '.grid__container--main*/
+.grid__container--main {
+    text-align: center;
 }
 
-.grid-item11 {
-    grid-area: home;
-}
-
-.grid-item12 {
-    grid-area: aboutus;
-}
-
-.grid-item13 {
-    grid-area: contactus;
-}
-
-.grid-item2{ 
-    grid-area: main;
-}
-
-.grid-item3{ 
-    grid-area: footer;
-}
-
-.grid__container {
-    display: grid;
-    grid-template-areas:
-    'header'
-    'main'
-    'footer';
-    gap: 145px;
-    background-color: rgb(255, 255, 0, .5);
+.main__aboutus {
     position: relative;
+    text-align: left;
 }
 
-.grid__container-main {
-    display: grid;
-    grid-template-areas:
-    'home'
-    'aboutus'
-    'contactus';
-    gap: 60px;
-    padding: 15px;
-    background-color: rgba(0, 255, 89, .5);
-}
-
-/* style layout - end */
-
-/* style image cat-and-dog - start */
-/* overlap header and image */
-.overlap {
+.img__dog {
+    width: 100%;
+    height: 35vh;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.img__cat-dog {
     z-index: -1;
 }
 
-/* style image cat-and-dog - end */
-
-/* style text - start */
-
-h1,
-h2,
-h3,
-.main__home p {
-    /* text-align: center; */
+.main__aboutus {
+   padding: 25px; 
+   padding-top: 15px;
 }
 
-h1 {
-    color: #E3D081;
-    -webkit-text-stroke: 1px rgb(84, 73, 75);
-    width: 70%;
-    /* margin: 380px auto 20px auto; */
-    /* margin: 0 auto; */
+.main__aboutus h2 {
+    color:#f1f7ed;
+    margin: 0 auto;
+    position: relative;
+    top: 110px;
 }
 
-h2,
-h3,
-.main__home p {
-    color: #54494b;
+.main__aboutus p:nth-child(3) {
+    margin: 0 auto;
+    position: relative;
+    top: 230px;
 }
 
-.main__home p:nth-child(1) {
-    /* margin-top: 180px; */
+.main__aboutus p:nth-child(4) {
+    margin: 0 auto;
+    position: relative;
+    top: 230px;
 }
 
-.main__home p:nth-child(3) {
-    /* margin: 0 auto; */
-    /* margin-bottom: 60px; */
-    width: 50%;
-}
+/* .main__aboutus h2 {
+    color:#f1f7ed;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+} */
 
-.a__bookonline,
-h3,
-.main__home p:nth-child(1)::first-letter,
-.main__home p:nth-child(3) {
-    text-transform: capitalize;
-}
-
-h2 {
-    text-transform: uppercase;
-}
-
-.main__contactus h2{
-    text-transform: capitalize;
-}
-
-span {
-    text-transform: none;
-}
-
-/* style text - end */
-
-/* style 'main' - start */
-
-/* .cat-and-dog-img {
-    background-image: url("images/.cat-and-dog-img.jpg");
-    width: 100px;
-    height: auto;
+/* .main__aboutus h2 {
+    color:#f1f7ed;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
 } */
 
 /* style 'main' - end */
+
+/* style footer - start */
+
+/* style block with class '.grid__container--footer*/
+.grid__container--footer {
+    padding: 15px;
+    /* padding-right: 15px; */
+    background-color: rgb(84, 73, 75);
+}
+
+.footer__content p:nth-child(1)::first-letter,
+.footer__content p:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.footer__content p:nth-child(1),
+.footer__content p:nth-child(2) {
+    text-align: center;
+    color: white;
+}
+
+/* .footer__content .a__bookonline {
+    margin-left: unset;
+} */
+
+.link__footer:link {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgb(241, 247, 237);
+    background-color: rgb(59, 194, 140);
+    box-shadow: 1px 2px 0px 0px rgb(0, 0, 0, 1.00);
+}
+
+.link__footer:visited {
+    color: #ee5b76;
+    background-color: rgb(151, 222, 194);
+    border: 1px solid black;
+}
+
+.link__footer:hover {
+    color: black;
+    background-color: rgb(227, 208, 129);
+}
+
+.link__footer:active {
+    color: blue;
+    background-color: #f1f7ed;
+}
+
+/* style footer - end */
+
+/* style layout - end */

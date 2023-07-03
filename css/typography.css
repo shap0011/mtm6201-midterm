@@ -73,8 +73,9 @@
     font-size: 1.7rem;
 }
 
-/* style the 'Book Online link */
-.a__bookonline {
+/* style the header and footer links */
+.link__header,
+.link__footer {
     font-family: 'Link Font', sans-serif;
     font-weight: 900;
     font-size: 1.25rem;

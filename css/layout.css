@@ -1,0 +1,109 @@
+/* style layout of website content - start *****************/
+
+/* create grid areas of website - start *******************/
+
+/* create grid areas of header - start *******************/
+
+.area__header {
+    grid-area: header;
+}
+
+/* create grid areas of header - end *******************/
+
+/* create grid areas of main - start *******************/
+
+.area__main {
+    grid-area: main;
+}
+
+.main__home {
+    grid-area: home;
+}
+
+.main__aboutus {
+    grid-area: aboutus;
+}
+
+.grid__main--contactus {
+    grid-area: contactus;
+}
+
+/* create grid areas of main - end *******************/
+
+/* create grid areas of footer - start *******************/
+
+.area__footer {
+    grid-area: footer;
+}
+
+/* create grid areas of footer - end *******************/
+
+/* create grid areas of website - end *******************/
+
+/* style layout of block with class '.grid__container' */
+.grid__container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+        /* gap: 60px; */
+}
+  
+/* style layout of header - start ***************************/
+
+/* style layout of navigation */
+.flexbox__header--nav-menubar {
+    display: flex;
+}
+
+/* style layout of block with class '.flexbox__container--header' */
+.flexbox__container--header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* style layout of link 'Book Online' */
+.grid__nav--a-bookonline {
+    display: grid;
+    gap: 15px;
+}
+
+/* style layout of header - end ****************************/
+
+/* style layout of main - start ***************************/
+
+.grid__container--main {
+    display: grid;
+    grid-template-areas:
+        'home'
+        'aboutus'
+        'contactus';
+    gap: 60px;
+}
+
+.grid__container--aboutus {
+    display: grid;
+    gap: 15px;
+}
+
+.grid__container--contactus {
+    display: grid;
+    gap: 15px;
+}
+
+/* style layout of main - end ****************************/
+
+/* style layout of footer - start ***************************/
+
+.grid__container--footer {
+    display: grid;
+    gap: 10px;
+}
+
+/* style layout of footer - end ****************************/
+
+/* style layout of block with class '.grid__container' */
+
+/* style layout of website content - start *****************/
