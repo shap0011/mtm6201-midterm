@@ -1,0 +1,64 @@
+/* style header link 'Book Online' - start ***************/
+
+.link__header:link {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 80px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(241, 247, 237);
+    background-color: rgb(59, 194, 140);
+    box-shadow: 1px 2px 0px 0px rgb(84, 73, 75, 1.00);
+}
+
+.link__header:visited {
+    color: #ee5b76;
+    background-color: rgb(151, 222, 194);
+    border: 1px solid black;
+}
+
+.link__header:hover {
+    color: black;
+    background-color: rgb(227, 208, 129);
+}
+
+.link__header:active {
+    color: blue;
+    background-color: #f1f7ed;
+}
+
+/* style header link 'Learn More' - end *****************/
+
+/* style footer link 'Learn More' - start ***************/
+
+.link__footer:link {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgb(241, 247, 237);
+    background-color: rgb(59, 194, 140);
+    box-shadow: 1px 2px 0px 0px rgb(0, 0, 0, 1.00);
+}
+
+.link__footer:visited {
+    color: #ee5b76;
+    background-color: rgb(151, 222, 194);
+    border: 1px solid black;
+}
+
+.link__footer:hover {
+    color: black;
+    background-color: rgb(227, 208, 129);
+}
+
+.link__footer:active {
+    color: blue;
+    background-color: #f1f7ed;
+}
+
+/* style footer link 'Book Online' - start ***************/

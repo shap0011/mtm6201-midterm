@@ -1,0 +1,31 @@
+/* style navigation - start ***************/
+
+.menuitem {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(241, 247, 237);
+    margin-left: 15px;
+}
+
+.menuitem:nth-child(1) {
+    padding: 11px 8.9px 9px 8.9px;
+}
+
+.menuitem:nth-child(2) {
+    padding: 11px 10px 9px 10px;
+}
+
+.menuitem:nth-child(3) {
+    padding: 11px 11.5px 9px 11.5px;
+}
+
+.menuitem:nth-child(4) {
+    padding: 15px 9.765px 5px 9.765px;
+}
+
+.menuitem:hover {
+    background-color: #e3d081;
+}
+
+/* style navigation - end ******************/
+

@@ -1,0 +1,39 @@
+/* style logo - start **********************/
+
+.logo__yellow {
+    fill: #e3d081;
+}
+
+.logo__white {
+    fill: #f1f7ed;
+
+}
+
+.logo__brown {
+    fill: #54494b;
+}
+
+#logo {
+    width: 80%;
+    height: auto;
+}
+
+#logo:hover .logo__brown {
+    fill: #e3d081;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+#logo:hover .logo__white {
+    fill: rgb(84, 73, 75);
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+#logo:hover .logo__yellow {
+    fill: #f1f7ed;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+/* style logo - end ***********************/

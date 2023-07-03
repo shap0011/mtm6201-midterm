@@ -124,7 +124,7 @@
               <div class="flexbox__header--nav-menubar">
                 <!-- create four blocks with links in each of them -->
                 <div class="menuitem" role="menuitem">
-                  <a href="#" title="Home" role="link">
+                  <a href="#home" title="Home" role="link">
                     <!-- use svg to visualize the links  -->
                     <svg class="svg__home" width="41.231" height="35.34">
                       <g data-name="Group 1230">
@@ -135,7 +135,7 @@
                     </svg>
                   </a></div>
                 <div class="menuitem" role="menuitem">
-                  <a href="#" title="About Us" role="link">
+                  <a href="#aboutus" title="About Us" role="link">
                     <svg class="svg__aboutus" width="39" height="36">
                       <g data-name="Group 1236">
                         <g fill="none" data-name="Group 1235">
@@ -163,7 +163,7 @@
                     </svg>
                   </a></div>
                 <div class="menuitem" role="menuitem">
-                  <a href="#" title="Contact Us" role="link">
+                  <a href="#contactus" title="Contact Us" role="link">
                     <svg class="svg__contactus" width="36" height="36"
                       data-name="Icons / Contact / ic-contact-phone-time">
                       <path fill="none" d="M0 0h36v36H0z" data-name="Rectangle 192" />
@@ -178,6 +178,7 @@
                   </a></div>
                 <div class="menuitem" role="menuitem">
                   <a href="#" title="More" role="link">
+                    <!-- there is should be a dropdown list -->
                     <svg class="svg__more" width="39.494" height="29.658">
                       <g data-name="Group 1232">
                         <g fill="none" stroke="#000" stroke-linecap="round" stroke-width="4" data-name="Group 1228">
@@ -203,31 +204,38 @@
       <!-- create a block with class '.grid__container--main' -->
       <div class="grid__container--main">
         <!-- create a section with class '.main__home' -->
-        <section class="main__home">
-          <p>we are here for your pet</p>
-          <h1>morgans pet care</h1>
-          <p>high quality care <span>for</span> your dog <span>and</span> cat</p>
+        <section id="home" class="main__home">
+          <div class="grid__container--home">
+            <p>we are here for your pet</p>
+            <h1>morgans pet care</h1>
+            <p>high quality care <span class="lowercase">for</span> your dog <span class="lowercase">and</span> cat</p>
+          </div>
         </section>
         <!-- create a section with class '.main__aboutus' -->
-        <section class="main__aboutus">
+        <section id="aboutus" class="main__aboutus">
           <!-- create a block with class '.grid__container--aboutus' -->
           <div class="grid__container--aboutus">
             <img class="img__dog" srcset="assets/images/sizes/mobile/dog-320_x_240.jpg 320w,
                 assets/images/sizes/mobile/dog-480_x_360.jpg 480w,
                 assets/images/sizes/mobile/dog-720_x_539.jpg 720w,
                 assets/images/sizes/mobile/dog-959_x_719.jpg 959w,
+                
                 assets/images/sizes/desktop/dog-480_x_360.jpg 960w,
                 assets/images/sizes/desktop/dog-640_x_480.jpg 1280w,
                 assets/images/sizes/desktop/dog-800_x_599.jpg 1600w" sizes="(min-width: 50vw) 100vw,
                        (min-width: 960px) 50vw, 180vw" src="assets/images/dog.jpg" alt="This is a dog">
             <h2>about us</h2>
-              <p><span class="span__main">about us: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Aliquam labore consequatur
-                eius harum mollitia. Architecto placeat vel quae dolores incidunt quia debitis laudantium omnis doloribus!
-                Aliquam labore consequatur
-                eius harum mollitia. Architecto placeat vel quae dolores incidunt quia debitis laudantium omnis doloribus!
-              </p>
-            <p><span class="span__main">our history: </span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, eligendi quo. Lorem
+            <p><span class="span__main">about us: </span>Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Lorem
+              ipsum dolor sit amet
+              consectetur adipisicing elit. Aliquam labore consequatur
+              eius harum mollitia. Architecto placeat vel quae dolores incidunt quia debitis laudantium omnis doloribus!
+              Aliquam labore consequatur
+              eius harum mollitia. Architecto placeat vel quae dolores incidunt quia debitis laudantium omnis doloribus!
+            </p>
+            <p><span class="span__main">our history: </span>Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit.
+              Cum, eligendi quo. Lorem
               ipsum dolor sit amet consectetur adipisicing elit. Aliquam labore consequatur
               eius harum mollitia. Architecto placeat vel quae dolores incidunt quia debitis laudantium omnis doloribus!
               Enim
@@ -235,16 +243,26 @@
           </div>
         </section>
         <!-- create a section with class '.main__contactus' -->
-        <section class="main__contactus">
+        <section id="contactus" class="main__contactus">
           <!-- create a block with class '.grid__container--contactus' -->
           <div class="grid__container--contactus">
             <h2>contact us</h2>
-            <h3>address</h3>
-            <h3>phone</h3>
-            <h3>email</h3>
+            <p><span class="span__main">address:</span></p>
+            <p>1234 Antler Avenue</p>
+            <p>Ottawa, Ontario</p>
+            <p>Located between Exter and Tartan</p>
+            <p><span class="span__main">phone:</span> 613-123-1234</p>
+            <p><span class="span__main">email:</span> info@morganspetcare.com</p>
             <h2>office hours</h2>
-            <h3>sunday <span>to</span> friday</h3>
-            <h3>saturday</h3>
+            <p><span class="span__main">sunday <span class="lowercase">to</span> friday:</span></p>
+            <p>8 am - 10 am, 4 pm - 5:30 pm</p>
+            <p><span class="span__main">saturday:</span> 8 am - 10 am</p>
+            <div class="social__links">
+            <div class="social__link">Icon</div>
+            <div class="social__link">Icon</div>
+            <div class="social__link">Icon</div>
+            <div class="social__link">Icon</div>
+          </div>
           </div>
         </section>
       </div>

@@ -1,6 +1,9 @@
 /* style layout of website content - start *****************/
 
 /* create grid areas of website - start *******************/
+.img__cat-dog {
+    grid-area: imgcatdog;
+}
 
 /* create grid areas of header - start *******************/
 
@@ -24,7 +27,7 @@
     grid-area: aboutus;
 }
 
-.grid__main--contactus {
+.main__contactus {
     grid-area: contactus;
 }
 
@@ -44,12 +47,12 @@
 .grid__container {
     display: grid;
     grid-template-areas:
+        'imgcatdog'
         'header'
         'main'
         'footer';
-        /* gap: 60px; */
 }
-  
+
 /* style layout of header - start ***************************/
 
 /* style layout of navigation */
@@ -80,7 +83,12 @@
         'home'
         'aboutus'
         'contactus';
-    gap: 60px;
+    gap: 40px;
+}
+
+.grid__container--home {
+    display: grid;
+    gap: 15px;
 }
 
 .grid__container--aboutus {
