@@ -77,14 +77,30 @@ h2 {
 
 /* locate image behind the header */
 .img__cat-dog {
+    max-width: 100%;
+    height: auto;
     z-index: -1;
 }
 
-/* style image cat-and-dog - end */
+/* style image .cat-and-dog - end */
+
+/* locate image behind the header */
+.img__dog {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* style image .dog - end */
 
 /* style flexbox block with class '.flexbox__container--header' */
 .flexbox__container--header {
     position: fixed;
+    max-width: 100%;
+    height: auto;
     background-color: rgb(235, 79, 23, .8);
     padding: 15px;
 }
@@ -119,14 +135,6 @@ h2 {
     color:#54494b;
 }
 
-.img__dog {
-    width: 100%;
-    height: 35vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-}
 
 .main__aboutus h2 {
     color:#f1f7ed;
