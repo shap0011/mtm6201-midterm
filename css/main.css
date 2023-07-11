@@ -6,7 +6,7 @@
 @import url("links.css");
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 /* style text - start ******************/
@@ -31,6 +31,7 @@ h3,
 .main__home p:nth-child(3) {
     margin: 0 auto;
     width: 50%;
+    margin-bottom: 45px;
 }
 
 .link__header,
@@ -85,7 +86,17 @@ h2 {
 /* style image .cat-and-dog - end */
 
 /* locate image behind the header */
-.img__dog {
+.img__dog--aboutus {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* locate image behind the header */
+.img__dog--contactus {
     max-width: 100%;
     height: auto;
     position: absolute;
@@ -100,8 +111,9 @@ h2 {
 .flexbox__container--header {
     position: fixed;
     max-width: 100%;
+    /* use width: 100%; for desktop layout */
     height: auto;
-    background-color: rgb(235, 79, 23, .8);
+    background-color: rgb(235, 79, 23, 1.00);
     padding: 15px;
 }
 
@@ -124,62 +136,84 @@ h2 {
 }
 
 .main__aboutus {
-
     position: relative;
     text-align: left;
     padding: 0 25px; 
     z-index: -1;
 }
 
-.main__aboutus p {
-    color:#54494b;
+.main__contactus {
+    /* text-align: center; */
+    /* padding: 20px 80px;  */
+    position: relative;
+    text-align: left;
+    padding: 0 25px; 
+    z-index: -1;
+    left: 0;
+    top: 350px;
 }
 
+.main__aboutus p,
+.main__contactus p {
+    color:#54494b;
+}
 
 .main__aboutus h2 {
     color:#f1f7ed;
     margin: 0 auto;
     position: relative;
     top: 200px;
-
 }
 
-.main__contactus {
-    text-align: center;
-    padding: 20px 80px; 
-}
-
-.main__contactus h2,
-.main__contactus p {
-    color:#54494b;
+.main__contactus h2 {
+    color:#f1f7ed;
+    margin: 15px auto;
     position: relative;
-    top: 210px;
+    top: 200px;
+    text-transform: uppercase;
+}
+
+.main__contactus p {
+    position: relative;
+    top: 320px;
     z-index: -1;
 }
 
-.main__contactus p {
-    text-align: left;
+.contact-info__wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+
+.social__links {
+    margin-top: 20px;
+}
+
+.contact-info__wrapper h2 {
+    position: relative;
+    top: 330px;
+    text-align: center;
+    color:#54494b;
+    padding: 15px;
 }
 
 .main__aboutus p:nth-child(3),
 .main__aboutus p:nth-child(4) {
     position: relative;
-    top: 240px;
+    top: 320px;
 }
 
 .social__links {
     display: flex;
     position: relative;
-    top: 240px;
-    /* padding: 20px;
-    background-color: rgba(255, 0, 0, 0.2); */
+    top: 320px;
 }
 
 .social__link {
     flex: 1;
     padding: 10px;
-    background-color: #E3D081;
-    border: 1px solid black;
     margin: 0 10px;
 }
 
@@ -190,7 +224,7 @@ h2 {
 /* style block with class '.grid__container--footer*/
 .area__footer {
     position: relative;
-    top: 250px;
+    top: 680px;
     padding: 15px;
     background-color: rgb(84, 73, 75);
 }

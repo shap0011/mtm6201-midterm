@@ -83,12 +83,12 @@
         'home'
         'aboutus'
         'contactus';
-    gap: 40px;
+    /* gap: 15px; */
 }
 
 .grid__container--home {
     display: grid;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 .grid__container--aboutus {

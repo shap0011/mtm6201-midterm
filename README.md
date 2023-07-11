@@ -16,13 +16,20 @@ S23 midterm assignment
 
 ## Work with image of home page:
 
-Image source:
+Image sources:
 
 Photo by <a href="https://unsplash.com/fr/@lppoitras?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis-Philippe Poitras</a> on <a href="https://unsplash.com/photos/sJgucUmcaKE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Louis-Philippe Poitras: https://unsplash.com/photos/sJgucUmcaKE
 
 Photo by <a href="https://unsplash.com/@steve_volt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stefan Riedl</a> on <a href="https://unsplash.com/photos/NtDwC2ZS6v0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   Stefan Reidl: https://unsplash.com/photos/NtDwC2ZS6v0;
+
+Icons sources:
+
+Social Icons by Behance https://www.behance.net/gallery/81872531/Hand-drawn-Wireframe-UI-Kit-for-Adobe-XD/modules/543248889
+
+Navigation Icons by Daniel Walter Scott https://www.udemy.com/course/ui-ux-web-design-using-adobe-xd/
+
 
 ## Work with typography:
 
