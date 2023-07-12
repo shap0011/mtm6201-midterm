@@ -284,6 +284,44 @@ footer .footer__content p {
     display: none;
 }
 
+/* style skip-links */
+
+/* Add skip-links */
+
+/* Style list items of class .skip-links*/
+  .skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    position: relative;
+  }
+  
+/* style links, center them horizontally */
+  .skip-links a {
+    /* top: 5em; */
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: hsl(0, 0%, 25%, .9);
+    color: hsl(0, 0%, 100%, .7);
+    padding: .05em 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  
+  /* style links on focus */
+  .skip-links a:focus {
+    top: 0;
+    outline: none;
+    transition-delay: .4s;
+    
+  }
+
+
 /* styling footer link 'Learn More' in the file 'links.css' */
 
 /* style footer - end */
@@ -295,6 +333,9 @@ footer .footer__content p {
 @media (min-width: 960px) {
 
     /* style header - start */
+    .skip-links {
+        display: none;
+    }
 
     /* style block with class 'flexbox__container--header */
 
