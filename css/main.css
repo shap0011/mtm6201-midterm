@@ -333,11 +333,11 @@ footer .footer__content p {
 @media (min-width: 960px) {
 
     /* style header - start */
-    .skip-links,
+    /* .skip-links,
     .skip-links a
      {
         display: none;
-    }
+    } */
 
     /* style block with class 'flexbox__container--header */
 
@@ -379,6 +379,10 @@ footer .footer__content p {
     /* style header - end */
 
     /* style home page - start*/
+
+    h1 {
+        margin: 180px auto 15px auto;
+    }
 
     /* place heading h2 in the header */
     .main__home p:nth-child(1) {
