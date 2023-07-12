@@ -23,11 +23,14 @@
     grid-area: home;
 }
 
-.main__aboutus {
+.main__aboutus,
+.main__aboutus-page {
     grid-area: aboutus;
 }
 
-.main__contactus {
+.main__contactus,
+.main__contactus-page
+ {
     grid-area: contactus;
 }
 
@@ -91,12 +94,16 @@
     /* gap: 15px; */
 }
 
-.grid__container--aboutus {
+.grid__container--aboutus,
+.grid__container--aboutus-page
+ {
     display: grid;
     gap: 15px;
 }
 
-.grid__container--contactus {
+.grid__container--contactus,
+.grid__container--contactus-page
+ {
     display: grid;
     gap: 15px;
 }

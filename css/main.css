@@ -1,3 +1,4 @@
+/* CSS Document */
 @import url("reset.css");
 @import url("typography.css");
 @import url("layout.css");
@@ -93,7 +94,8 @@ h2 {
 /* style image .cat-and-dog - end */
 
 /* locate image behind the header */
-.img__dog--aboutus {
+.img__dog--aboutus,
+.aboutus__img--dog {
     max-width: 100%;
     height: auto;
     position: absolute;
@@ -142,14 +144,16 @@ h2 {
     color: #54494b;
 }
 
-.main__aboutus {
+.main__aboutus,
+.main__aboutus-page {
     position: relative;
     text-align: left;
     padding: 0 25px;
     z-index: -1;
 }
 
-.main__contactus {
+.main__contactus,
+.main__contactus-page {
     position: relative;
     text-align: left;
     padding: 0 25px;
@@ -159,18 +163,22 @@ h2 {
 }
 
 .main__aboutus p,
-.main__contactus p {
+.main__aboutus-page p,
+.main__contactus p,
+.main__contactus-page p {
     color: #54494b;
 }
 
-.main__aboutus h2 {
+.main__aboutus h2,
+.main__aboutus-page h2 {
     color: #f1f7ed;
     margin: 0 auto;
     position: relative;
     top: 200px;
 }
 
-.main__contactus h2 {
+.main__contactus h2,
+.main__contactus-page h2 {
     color: #f1f7ed;
     margin: 15px auto;
     position: relative;
@@ -178,13 +186,14 @@ h2 {
     text-transform: uppercase;
 }
 
-.main__contactus p {
+.main__contactus p,
+.main__contactus-page p {
     position: relative;
     top: 320px;
     z-index: -1;
 }
 
-.contact-info__wrapper {
+.contact-page-info__wrapper {
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -192,7 +201,7 @@ h2 {
     line-height: 1.5rem;
 }
 
-.contact-info__wrapper h2 {
+.contact-page-info__wrapper h2 {
     position: relative;
     top: 330px;
     text-align: center;
@@ -201,7 +210,9 @@ h2 {
 }
 
 .main__aboutus p:nth-child(3),
-.main__aboutus p:nth-child(4) {
+.main__aboutus-page p:nth-child(3),
+.main__aboutus p:nth-child(4),
+.main__aboutus-page p:nth-child(4) {
     position: relative;
     top: 320px;
 }
@@ -224,14 +235,16 @@ h2 {
 
     0% {
         fill: red;
-      }
-      50% {
-        fill: yellow;
-      }
-      100% {
-         fill: green;
-      }
     }
+
+    50% {
+        fill: yellow;
+    }
+
+    100% {
+        fill: green;
+    }
+}
 
 .social__link svg rect {
     animation-name: flash__link;
@@ -408,18 +421,95 @@ footer .footer__content p {
 
     /* style footer - end */
 
-
-
-
-
-    /* .img__dog--aboutus {
+    /* style page about us start */
+    .aboutus__img--dog {
         max-width: unset;
+        height: auto;
         position: absolute;
-        top: -500px;
+        top: 30px;
         left: unset;
         right: 0;
-        width: 56%;
-    } */
+        z-index: -1;
+    }
+
+    /* style header h2 */
+    .grid__container--aboutus-page h2 {
+        position: relative;
+        right: 25%;
+        top: 100px;
+        color: #54494b;
+    }
+
+    .content__aboutus--page {
+        position: relative;
+        top: 100px;
+        width: 50%;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .content__aboutus--page p {
+        margin-bottom: 30px;
+    }
+
+    .span__main {
+        font-size: 1.7rem;
+    }
+
+    /* style page about us - end */
+
+    /* style page contact us - start */
+
+    .main__contactus-page {
+        top: unset;
+    }
+
+    .main__contactus-page h2 {
+        color: #54494b;
+        margin: 0 auto;
+        position: relative;
+        top: 0px;
+    }
+
+    .main__contactus-page p {
+        top: 110px;
+    }
+
+    .contact-page-info__wrapper h2:nth-child(1) {
+        top: 100px;
+    }
+
+    .contact-page-info__wrapper h2:nth-child(8) {
+        top: 140px;
+    }
+
+    .main__contactus-page p:nth-child(9),
+    .main__contactus-page p:nth-child(10),
+    .main__contactus-page p:nth-child(11) {
+        top: 160px;
+    }
+
+    .contact-page-info__wrapper {
+        width: 30%;
+    }
+
+    .grid__container--contactus-page {
+        display: flex;
+    }
+
+    .main__contactus-page img {
+        width: 25%;
+        position: relative;
+        top: 130px;
+    }
+
+
+
+    /* style page contact us - end */
+
+
+
+
 
 
 
