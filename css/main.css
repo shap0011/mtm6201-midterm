@@ -333,7 +333,9 @@ footer .footer__content p {
 @media (min-width: 960px) {
 
     /* style header - start */
-    .skip-links {
+    .skip-links,
+    .skip-links a
+     {
         display: none;
     }
 
