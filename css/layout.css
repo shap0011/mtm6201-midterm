@@ -70,7 +70,7 @@
 /* style layout of link 'Book Online' */
 .grid__nav--a-bookonline {
     display: grid;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 /* style layout of header - end ****************************/

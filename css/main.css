@@ -11,6 +11,17 @@
 
 /* style text - start ******************/
 
+.menuitem:nth-child(1) {
+    display: none;
+}
+
+.menuitem:nth-child(2),
+.menuitem:nth-child(3) {
+    visibility: hidden;
+}
+
+
+
 h1 {
     color: #E3D081;
     -webkit-text-stroke: 1px rgb(84, 73, 75);
@@ -44,10 +55,6 @@ h3,
 
 h2 {
     text-transform: uppercase;
-}
-
-.main__contactus h2 {
-    text-transform: capitalize;
 }
 
 .lowercase {
@@ -132,22 +139,20 @@ h2 {
 }
 
 .main__home p {
-    color:#54494b;
+    color: #54494b;
 }
 
 .main__aboutus {
     position: relative;
     text-align: left;
-    padding: 0 25px; 
+    padding: 0 25px;
     z-index: -1;
 }
 
 .main__contactus {
-    /* text-align: center; */
-    /* padding: 20px 80px;  */
     position: relative;
     text-align: left;
-    padding: 0 25px; 
+    padding: 0 25px;
     z-index: -1;
     left: 0;
     top: 350px;
@@ -155,18 +160,18 @@ h2 {
 
 .main__aboutus p,
 .main__contactus p {
-    color:#54494b;
+    color: #54494b;
 }
 
 .main__aboutus h2 {
-    color:#f1f7ed;
+    color: #f1f7ed;
     margin: 0 auto;
     position: relative;
     top: 200px;
 }
 
 .main__contactus h2 {
-    color:#f1f7ed;
+    color: #f1f7ed;
     margin: 15px auto;
     position: relative;
     top: 200px;
@@ -187,15 +192,11 @@ h2 {
     line-height: 1.5rem;
 }
 
-.social__links {
-    margin-top: 20px;
-}
-
 .contact-info__wrapper h2 {
     position: relative;
     top: 330px;
     text-align: center;
-    color:#54494b;
+    color: #54494b;
     padding: 15px;
 }
 
@@ -209,12 +210,33 @@ h2 {
     display: flex;
     position: relative;
     top: 320px;
+    margin-top: 20px;
 }
 
 .social__link {
     flex: 1;
     padding: 10px;
     margin: 0 10px;
+}
+
+/* animation */
+@keyframes flash__link {
+
+    0% {
+        fill: red;
+      }
+      50% {
+        fill: yellow;
+      }
+      100% {
+         fill: green;
+      }
+    }
+
+.social__link svg rect {
+    animation-name: flash__link;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
 /* style 'main' - end */
@@ -227,6 +249,7 @@ h2 {
     top: 680px;
     padding: 15px;
     background-color: rgb(84, 73, 75);
+    z-index: -1;
 }
 
 .footer__content p:nth-child(1)::first-letter,
@@ -237,7 +260,11 @@ h2 {
 
 footer .footer__content p {
     text-align: center;
-    color: white;
+    color: rgb(227, 208, 129);
+}
+
+.grid__container--footer div:nth-child(3) {
+    display: none;
 }
 
 /* styling footer link 'Learn More' in the file 'links.css' */
@@ -245,3 +272,158 @@ footer .footer__content p {
 /* style footer - end */
 
 /* style layout - end */
+
+/* media query, desktop layout */
+
+@media (min-width: 960px) {
+
+    /* style header - start */
+
+    /* style block with class 'flexbox__container--header */
+
+    .flexbox__container--header {
+        max-width: unset;
+        width: 100%;
+        background-color: rgb(235, 79, 23, 1.00);
+        padding: 15px 100px;
+    }
+
+    /* style menuitems */
+    .menuitem:nth-child(1) {
+        display: unset;
+    }
+
+    .menuitem:nth-child(2),
+    .menuitem:nth-child(3) {
+        visibility: unset;
+    }
+
+    .menuitem:nth-child(4) {
+        display: none;
+    }
+
+    /* style 'Book Online' header link */
+
+    .link__header:link {
+        margin-left: unset;
+        right: 100px;
+    }
+
+    /* style logo */
+
+    #logo {
+        width: 45%;
+    }
+
+
+    /* style header - end */
+
+    /* style home page - start*/
+
+    /* place heading h2 in the header */
+    .main__home p:nth-child(1) {
+        margin-top: 70px;
+        z-index: 2;
+        color: #E3D081;
+    }
+
+    .img__cat-dog {
+        max-width: unset;
+        width: 47%;
+        height: auto;
+        z-index: -1;
+    }
+
+    /* style non-relatieve content with 'display:none;' */
+
+    .main__contactus {
+        display: none;
+    }
+
+    .main__aboutus {
+        display: none;
+    }
+
+    /* style body */
+
+    body {
+        background: linear-gradient(to left, rgba(255, 255, 255, .5), rgb(174, 199, 188), rgba(255, 255, 255, .5));
+        overflow: hidden;
+    }
+
+    .grid__container--home h1,
+    .grid__container--home p:nth-child(3) {
+        position: relative;
+        left: 20%;
+    }
+
+    /* style home page - end*/
+
+    /* style footer - start */
+
+    .area__footer {
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        z-index: unset;
+    }
+
+    .grid__container--footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .footer__content p {
+        text-align: unset;
+        color: rgb(227, 208, 129);
+    }
+
+    .link__footer:link {
+        width: 15%;
+        margin: unset;
+    }
+
+    /* style social links */
+
+    .grid__container--footer div:nth-child(3) {
+        display: flex;
+    }
+
+    .social__links {
+        justify-content: space-around;
+        align-items: center;
+        position: unset;
+        top: unset;
+        margin-top: unset;
+    }
+
+    .social__link {
+        flex: 1;
+        padding: 0 20px;
+        margin: unset;
+    }
+
+
+    /* style footer - end */
+
+
+
+
+
+    /* .img__dog--aboutus {
+        max-width: unset;
+        position: absolute;
+        top: -500px;
+        left: unset;
+        right: 0;
+        width: 56%;
+    } */
+
+
+
+
+
+
+}
