@@ -207,6 +207,12 @@ h2 {
     padding: 15px;
 }
 
+.contact-info__wrapper .oh-h2 {
+    color: #54494b;
+    text-align: center;
+    top: 330px;
+}
+
 .main__aboutus p:nth-child(3),
 .main__aboutus-page p:nth-child(3),
 .main__aboutus p:nth-child(4),
@@ -497,6 +503,7 @@ footer .footer__content p {
 
     .main__contactus-page img {
         width: 25%;
+        height: auto;
         position: relative;
         top: 130px;
     }
