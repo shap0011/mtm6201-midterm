@@ -1,6 +1,8 @@
 # mtm6201-midterm
 S23 midterm assignment
 
+[Click the link to see the completed project](https://shap0011.github.io/mtm6201-midterm/index.html)
+
 ## Work with Header:
 
 - Work with Logo:
